@@ -58,7 +58,7 @@ $ git clone https://github.com/DineshValor/valor
 │• extract `valor-bot.zip` using any file manager into `downloads` folder.
 ╰──────────────────
 $ cd /storage/downloads/valor-bot
-(Here replace valor-bot name with current download valor-bot folder name)
+(Here replace `valor-bot` name with current download `valor-bot-v4.1.0` folder name)
 ```
 * Extract `node_modules.zip` using any file manager into `valor-bot` folder. For ex. (downloads/valor-bot/node_modules)
 * Continue in termux after `$ cd /storage/downloads/valor-bot`
@@ -67,7 +67,7 @@ $ node .
 ╭──────────────────
 │[If Error in node .]
 │• check twice node_modules
-│• contact me on whatsapp
+│• raise issue/discussion in the repository.
 ╰──────────────────
 ```
 * Wait for bot starting...
@@ -83,7 +83,7 @@ $ node .
 ```
 * Scan QR code, once connected, appear green in termux at first boot-up.
 
-*Caution:- If failed again i. QR code, then repeat steps.
+*Caution:- If failed to scan QR code, then repeat steps.
 
 ─────────────────────────
 

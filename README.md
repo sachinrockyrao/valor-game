@@ -156,3 +156,4 @@ conn.sendButton(m.chat, 'hi', text.trim(), 'https://telegra.ph/file/fe5883c8011f
 ], m, { asLocation: true })
 ```
 
+![Screenshot_20220227-145557__01](https://user-images.githubusercontent.com/98645523/155876806-a1b301ff-49e2-486a-8a5e-7180750b9d97.jpg)

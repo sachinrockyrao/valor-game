@@ -1,32 +1,30 @@
 ## Installation For Heroku User
 
 ### Required Heroku Buildpack
+* https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+* https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 * heroku/nodejs
-* https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
-* https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
+#### Note:
+* Add buildpack in above showed sequence only.
 
 ### Steps To Setup Bot on Heroku
 * Fork this github repository.
-* Click on Deploy Button.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DineshValor/valor)
-
-* Signup/Sign In with your user id password.
-* Set `App name`.
-* Click on `Deploy app`.
-* After finish, click on `Manage App`.
-* Go to `Settings`. (If settings option not seen, then switch browser into destop mode) 
-* Click on `Add Buildpack` and add all three. [mentioned above] (note:- add nodejs again too)
-* Go to `Deploy`.
-* Click on `GitHub (connect to gitHub)`. Connect you Github account with heroku, if not done yet before.
-* Click on `Search` and connect `<username>/valor`
-* `Click on `Deploy Branch`. (It's take around few minutes to finish, be patience.)
-* After finish, go to `Resources`.
-* Turn ON `worker: node .`
-* Click on `More↑↓`, then click on `View longs`.
-* Wait for QR code generate. (Only in pc or laptop compatible)
-* Scan it via Whatsapp app.
-* Hooray Bot ready, check whatsapp and try to use bot using command `??` `/menu`
+* Go to `Heroku.com`. [`Heroku`](https://www.heroku.com/)
+* Create new app.
+* Enter `App name` and click on `Create app`.
+* Go to `Settings`.
+* Click on `Add buildpack`.
+* Add `ffmpeg`, `imagemagick`, `nodejs` and click on `Save changes` respectively. (Copy and paste from `Required for heroku`)
+* Go to `Deploy` and click on `GitHub (connect to GitHub)`.
+* Connect your `GitHub` account to `Heroku` account.
+* After conncted with `GitHub`, scroll down search a repository `<your-username>/valor`.
+* Click on `Connect`.
+* Scroll down, and click on `Deploy Branch`. (It's take few minutes, br patience)
+* Go to `Resources` and turn ON `worker: node .`
+* Go to `More↑↓` and click on `View logs`.
+* Wait for QR code, generation.
+* Scan QR from `Whatsapp > Linked Devices > Join Multi Devices > Link Device`.
+* Hooray, Successfully Bot Setup Completed.
 
 ─────────────────────────
 

@@ -155,5 +155,4 @@ conn.sendButton(m.chat, 'hi', text.trim(), 'https://telegra.ph/file/fe5883c8011f
 ['speed','/ping']
 ], m, { asLocation: true })
 ```
-![Picsart_22-02-25_15-27-08-938__01](https://user-images.githubusercontent.com/98645523/155695355-33d20852-25f2-4e1b-88cf-36cad7ed9f1d.jpg)
 

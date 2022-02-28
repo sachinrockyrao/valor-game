@@ -184,7 +184,7 @@ export async function handler(chatUpdate) {
 
                     money: 0,
                     health: 100,
-                    limit: 10,
+                    limit: 100,
                     potion: 10,
                     trash: 0,
                     wood: 0,
@@ -242,9 +242,9 @@ export async function handler(chatUpdate) {
                 if (!('isBanned' in chat))
                     chat.isBanned = false
                 if (!('welcome' in chat))
-                    chat.welcome = true
+                    chat.welcome = false
                 if (!('detect' in chat))
-                    chat.detect = true
+                    chat.detect = false
                 if (!('sWelcome' in chat))
                     chat.sWelcome = ''
                 if (!('sBye' in chat))
@@ -256,25 +256,25 @@ export async function handler(chatUpdate) {
                 if (!('delete' in chat))
                     chat.delete = true
                 if (!('antiLink' in chat))
-                    chat.antiLink = true
+                    chat.antiLink = false
                 if (!('viewonce' in chat))
-                    chat.viewonce = true
+                    chat.viewonce = false
                 if (!('antiToxic' in chat))
-                    chat.antiToxic = true
+                    chat.antiToxic = false
                 if (!isNumber(chat.expired))
                     chat.expired = 0
             } else
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: true,
-                    detect: true,
+                    welcome: false,
+                    detect: false,
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
                     sDemote: '',
                     delete: true,
-                    antiLink: true,
-                    viewonce: true,
+                    antiLink: false,
+                    viewonce: false,
                     antiToxic: true,
                     expired: 0,
                 }
@@ -470,11 +470,11 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `LimitYour limit is up, please buy via *${usedPrefix}buy*`, m)
+                    this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `required level ${plugin.level} to use this command.  Your level ${_user.level}`, m)
+                    this.reply(m.chat, `diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -530,7 +530,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' Limit used')
+                        m.reply(+m.limit + ' Limit terpakai')
                 }
                 break
             }
@@ -640,9 +640,9 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return
         await this.reply(msg.chat, `
-Detected @${participant.split`@`[0]} deleted message
- To turn off this feature, type
- *.enable delete*
+Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
+Untuk mematikan fitur ini, ketik
+*.enable delete*
 `.trim(), msg, {
             mentions: [participant]
         })
@@ -654,16 +654,16 @@ Detected @${participant.split`@`[0]} deleted message
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'This command can only be used by _*OWWNER!1!1!*_',
-        owner: 'This command can only be used by _*Owner Bot*_!',
-        mods: 'This command can only be used by _*Moderator*_ !',
-        premium: 'This command is only for _*Premium Members*!',
-        group: 'This command can only be used in *Groups*!',
-        private: 'This command can only be used in *Private Chat*!',
-        admin: 'This command is only for *Group Admin*!',
-        botAdmin: 'Make the bot *Admin* to use this command!',
-        unreg: 'Please register to use this feature by typing:\n\n*#list name.age*\n\nExample: *#list Dinesh.21*',
-        restrict: 'This feature is *disabled*!'
+        rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
+        owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
+        mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
+        premium: 'Perintah ini hanya untuk member _*Premium*_ !',
+        group: 'Perintah ini hanya dapat digunakan di grup!',
+        private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
+        admin: 'Perintah ini hanya untuk *Admin* grup!',
+        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
+        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
+        restrict: 'Fitur ini di *disable*!'
     }[type]
     if (msg) return m.reply(msg)
 }

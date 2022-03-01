@@ -87,7 +87,7 @@ $ cd /storage/downloads/valor-x.x.x-md
 
   (Here `x.x.x` is current version of a bot)
 
-Note: Extract `node_modules.zip` properly. Make sure only single folder with name `node_modules` create`, not one folder in another second folder like ❌`node_modules/node_modules`❌
+Note: Extract `node_modules.zip` properly. Make sure only single folder with name `node_modules` create, not one in another second folder like ❌ `node_modules/node_modules` ❌
 
 ##### Step 4
 ```

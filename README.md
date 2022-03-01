@@ -1,4 +1,5 @@
 # VALOR WhatsApp Bot
+Based on [`games-wabot`](https://github.com/BochilGaming/games-wabot) and [`Baileys_multi-device`](https://github.com/adiwajshing/Baileys)
 
 <table>
   <tr>

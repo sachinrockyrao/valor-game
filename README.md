@@ -49,11 +49,10 @@ Note: add above buildpack in sequence and click on save changes respectively.
 
 #### Requirements:
 * Android 7 or above
-* Internet
 * 2 Device (one to run termux, second to scan qr code from termux)
 * Little bit IQ
 
-Note: You can run bot in single device after successful setup, just copy whole/full `(valor-x.x.x-md)` folder from another device into yours and run that folder in termux.
+Note: You can run bot in single device after successful setup, just copy whole/full `(valor-x.x.x-md)` folder from another device into yours and run that folder in termux. Only works with Termux (Internal Storage) Method.
 
 (Here `x.x.x` is current version of a bot)
 #### Additional Requirements:
@@ -64,12 +63,9 @@ Note: You can run bot in single device after successful setup, just copy whole/f
 * Download [`node_modules.zip`](https://drive.google.com/file/d/1Ydcjt3PnGiOr9vL66dFC11V0sEywJb32/view?usp=drivesdk)
 
 ### Steps To Setup Bot Into Termux
-##### Step 1
-* Download and install `Termux` from above section `Additional Requirements` 1st point.
-* Open `Termux`
-
-##### Step 2
-* Type mentioned below given commands one by one in `Termux`
+1. Download and install `Termux` from above section `Additional Requirements` 1st point.
+2. Open `Termux`
+3. Type mentioned below given commands one by one in `Termux`
 ```
 $ pkg update && pkg upgrade
 $ pkg install git -y
@@ -79,23 +75,15 @@ $ pkg install imagemagick -y
 $ pkg install yarn
 $ git clone https://github.com/DineshValor/valor
 $ cd valor
-/valor $ node .
+$ node .
 ```
-  (do not copy `$` & `/valor $` along with command)
-
-
-##### Step 3
-* Wait for bot starting...
-* Scan QR code from 2nd device. (Go to whatsapp > Linked Devices > Join `Multi Device Beta` > Click on `link device`)
+4. Wait for bot starting...
+5. Scan QR code from 2nd device. (Go to whatsapp > Linked Devices > Join `Multi Device Beta` > Click on `link device`)
 
 ### Steps To Setup Bot Into Termux (Internal Storage)
-
-##### Step 1
-* Download and install `Termux` from above section `Additional Requirements` 1st point.
-* Open `Termux`
-
-##### Step 2
-* Type mentioned below given commands one by one in `Termux`
+1. Download and install `Termux` from above section `Additional Requirements` 1st point.
+2  Open `Termux`
+3. Type mentioned below given commands one by one in `Termux`
 ```
 $ termux-setup-storage
 $ pkg update && pkg upgrade
@@ -106,52 +94,44 @@ $ pkg install imagemagick -y
 $ pkg install yarn
 $ cd /storage/downloads
 $ git clone https://github.com/DineshValor/valor
-````
-  (do not copy `$` & `/valor $` along with command)
 
-###### Error Step (ignore if no error in termux)
-[ If Error in `git clone` command ]
-* Download `valor` from above section `Additional Requirements` 2nd point.
-* Extract `valor-x.x.x-md.zip` using any file manager into `downloads` folder.
+╭─────────────────────────────
+│[ If Error in `git clone` command ]
+│ • Download `valor` from above section `Additional Requirements` 2nd point.
+| • Extract `valor-x.x.x-md.zip` using any file manager into `downloads` folder.
+│  (Here `x.x.x` is current version of a bot)
+╰─────────────────────────────
 
-(Here `x.x.x` is current version of a bot)
+$ cd valor-x.x.x-md
+$ yarn
 
-##### Step 3
+╭─────────────────────────────
+│ [ If Error in `yarn` command ]
+│ • Download `node_modules` from above section `Additional Requirements` 3rd point.
+│ • Extract `node_modules.zip` using any file manager into `valor-x.x.x-md` folder. For ex. (downloads/valor-x.x.x-md/node_modules)
+│  (Here `x.x.x` is current version of a bot)
+╰─────────────────────────────
+
+$ node .
+
+╭─────────────────────────────
+│ [ If Error in `node .` command ]
+│ • Check twice `node_modules.zip` file extracted properly at path `/downloads/valor-bot/node_modules/(400+ folder)`
+│ • Raise issue at 'https://github.com/DineshValor/valor/issues'
+╰─────────────────────────────
 ```
-$ cd /storage/downloads/valor-x.x.x-md
-.../downloads/valor-x.x.x-md $ yarn
+4. Wait for bot starting...
+5. Scan QR code from 2nd device. (Go to whatsapp > Linked Devices > Join `Multi Device Beta` > Click on `link device`)
+
 ```
+╭─────────────────────────────
+│ [ If device vibrate but not connected ]
+│ • Exit from termux. (necessary)
+│ • Open file manager, go to `downloads > valor > session.data.json` & delete session.data.json file.
+╰─────────────────────────────
 
-###### Error Step (ignore if no error in termux)
-[ If Error in `yarn` command ]
-* Download `node_modules` from above section `Additional Requirements` 3rd point.
-* Extract `node_modules.zip` using any file manager into `valor-x.x.x-md` folder. For ex. (downloads/valor-x.x.x-md/node_modules)
-
-  (Here `x.x.x` is current version of a bot)
-
-Note: Extract `node_modules.zip` properly. Make sure only single folder with name `node_modules` create, not one in another second folder like `node_modules/node_modules`.
-
-##### Step 4
-```
-.../downloads/valor-x.x.x-md $ node .
-```
-
-###### Error Step (ignore if no error in termux)
-[ If Error in `node .` command ]
-* Check twice `node_modules.zip` file extracted properly at path `/downloads/valor-bot/node_modules/(400+ folder)`
-* Raise issue at 'https://github.com/DineshValor/valor/issues'
-
-##### Step 5
-* Wait for bot starting...
-* Scan QR code from 2nd device. (Go to whatsapp > Linked Devices > Join `Multi Device Beta` > Click on `link device`)
-
-###### Error Step (ignore if no error in termux)
-[ If device vibrate but not connected ]
-* Exit from termux. (necessary)
-* Open file manager, go to `downloads > valor > session.data.json` & delete session.data.json file.
-```
 $ cd /storage/downloads/valor
-.../downloads/valor-x.x.x-md $ node .
+$ node .
 ```
 Caution:- If failed to scan QR code, then repeat from steps 5.
 

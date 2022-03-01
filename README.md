@@ -9,7 +9,7 @@ Note: add buildpack in above showed sequence only
 
 ### Steps To Setup Bot on Heroku
 1. Fork this github repository.
-2. Go to `Heroku.com`. [`Heroku Link`](https://www.heroku.com/)
+2. Go to [`Heroku.com`](https://www.heroku.com/)
 3. Create new app.
 4. Enter `App name` and click on `Create app`.
 5. Go to `Settings`.

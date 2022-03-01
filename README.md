@@ -92,7 +92,6 @@ Note: Extract `node_modules.zip` properly. Make sure only single folder with nam
 ##### Step 4
 ```
 .../downloads/valor-x.x.x-md $ node .
-  (Here `x.x.x` is current version of a bot)
 ```
 
 ###### Error Step (ignore if no error in termux)
@@ -114,7 +113,7 @@ Note: Extract `node_modules.zip` properly. Make sure only single folder with nam
 ##### Step 5
 ```
 $ cd /storage/downloads/valor
-$ node .
+.../downloads/valor-x.x.x-md $ node .
 ```
 
 ##### Step 6

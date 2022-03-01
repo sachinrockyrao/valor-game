@@ -64,6 +64,26 @@ Note: You can run bot in single device after successful setup, just copy whole/f
 * Download [`node_modules.zip`](https://drive.google.com/file/d/1Ydcjt3PnGiOr9vL66dFC11V0sEywJb32/view?usp=drivesdk)
 
 ### Steps To Setup Bot Into Termux
+##### Step 1
+* Download and install `Termux` from above section `Additional Requirements` 1st point.
+* Open `Termux`
+
+##### Step 2
+* Type mentioned below given commands one by one in `Termux`
+```
+$ pkg update && pkg upgrade
+$ pkg install git -y
+$ pkg install nodejs-lts -y
+$ pkg install ffmpeg -y
+$ pkg install imagemagick -y
+$ pkg install yarn
+$ git clone https://github.com/DineshValor/valor
+$ cd valor
+/valor $ node .
+```
+  (do not copy `$` & `/valor $` along with command)
+
+### Steps To Setup Bot Into Termux (Internal Storage)
 
 ##### Step 1
 * Download and install `Termux` from above section `Additional Requirements` 1st point.
@@ -74,7 +94,7 @@ Note: You can run bot in single device after successful setup, just copy whole/f
 ```
 $ termux-setup-storage
 $ pkg update && pkg upgrade
-$ pkg install git
+$ pkg install git -y
 $ pkg install nodejs-lts -y
 $ pkg install ffmpeg -y
 $ pkg install imagemagick -y
@@ -82,7 +102,7 @@ $ pkg install yarn
 $ cd /storage/downloads
 $ git clone https://github.com/DineshValor/valor
 ````
-  (do not try to copy `$` along with command)
+  (do not copy `$` & `/valor $` along with command)
 
 ###### Error Step (ignore if no error in termux)
 [ If Error in `git clone` command ]

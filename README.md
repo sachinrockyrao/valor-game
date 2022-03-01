@@ -52,7 +52,7 @@ Note: add above buildpack in sequence and click on save changes respectively.
 * 2 Device (one to run termux, second to scan qr code from termux)
 * Little bit IQ
 
-Note: You can run bot in single device after successful setup, just copy whole/full `(valor-x.x.x-md)` folder from another device into yours and run that folder in termux. Only works with Termux (Internal Storage) Method.
+Note: You can run bot in single device after successful setup, just copy whole/full `(valor-x.x.x-md)` folder from another device into yours and run that folder in termux, but it's only works with Termux (Hard) Method.
 
 (Here `x.x.x` is current version of a bot)
 #### Additional Requirements:
@@ -62,7 +62,7 @@ Note: You can run bot in single device after successful setup, just copy whole/f
   (Here `x.x.x` is current version of a bot)
 * Download [`node_modules.zip`](https://drive.google.com/file/d/1Ydcjt3PnGiOr9vL66dFC11V0sEywJb32/view?usp=drivesdk)
 
-### Steps To Setup Bot Into Termux
+### Steps To Setup Bot Into Termux (Easy)
 1. Download and install `Termux` from above section `Additional Requirements` 1st point.
 2. Open `Termux`
 3. Type mentioned below given commands one by one in `Termux`
@@ -79,8 +79,9 @@ $ node .
 ```
 4. Wait for bot starting...
 5. Scan QR code from 2nd device. (Go to whatsapp > Linked Devices > Join `Multi Device Beta` > Click on `link device`)
+6. Now you ready to use bot features.
 
-### Steps To Setup Bot Into Termux (Internal Storage)
+### Steps To Setup Bot Into Termux (Hard)
 1. Download and install `Termux` from above section `Additional Requirements` 1st point.
 2  Open `Termux`
 3. Type mentioned below given commands one by one in `Termux`
@@ -133,7 +134,10 @@ $ node .
 $ cd /storage/downloads/valor
 $ node .
 ```
-Caution:- If failed to scan QR code, then repeat from steps 5.
+6. Once connected, open `File Manager`.
+7. Go to /downloads/valor-x.x.x-md/session.data.json
+8. Take a backup of `session.data.json`. So in future you don't need to scan QR code again and again, just copy and paste in the bot folder path next time setup.
+9. Now your bot ready to rock n roll.
 
 ================================
 

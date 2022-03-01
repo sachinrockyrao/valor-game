@@ -36,7 +36,7 @@ Note: add buildpack in above showed sequence only
 * 2 Device (one to run termux, second to scan qr code from termux)
 * Little bit IQ
 
-Note: You can run bot in single device after successful setup, just copy whole/full `(valor-x.x.x-md)` folder from another device to yours and run that folder in termux.
+Note: You can run bot in single device after successful setup, just copy whole/full `(valor-x.x.x-md)` folder from another device into yours and run that folder in termux.
 
 (Here `x.x.x` is current version of a bot)
 #### Additional Requirements:

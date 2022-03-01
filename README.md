@@ -1,4 +1,4 @@
-# VALOR WhatsApp Bot
+# VALOR WhatsApp Bot (Multi Device)
 
 <table>
   <tr>
@@ -7,9 +7,9 @@
      <td>Download Video's & Audio's</td>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/98645523/156191052-0d0b3961-dcfb-4c1b-ae19-dac18541df92.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/98645523/156252216-b6f436e0-3418-4998-8560-e119c2333c0a.jpg" width=270 height=480></td>
     <td><img src="https://user-images.githubusercontent.com/98645523/156191168-9f70e706-2c31-4da4-bde7-400daefab335.jpg" width=270 height=480></td>
-    <td><img src="https://user-images.githubusercontent.com/98645523/156191231-0c4c3a02-dd74-403f-ac22-b803a719a89b.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/98645523/156252244-40a59691-890b-41c8-9e7a-490dd07e865a.jpg" width=270 height=480></td>
   </tr>
  </table>
 
@@ -83,6 +83,11 @@ $ cd valor
 ```
   (do not copy `$` & `/valor $` along with command)
 
+
+##### Step 3
+* Wait for bot starting...
+* Scan QR code from 2nd device. (Go to whatsapp > Linked Devices > Join `Multi Device Beta` > Click on `link device`)
+
 ### Steps To Setup Bot Into Termux (Internal Storage)
 
 ##### Step 1
@@ -138,25 +143,17 @@ Note: Extract `node_modules.zip` properly. Make sure only single folder with nam
 
 ##### Step 5
 * Wait for bot starting...
-
-##### Step 6
 * Scan QR code from 2nd device. (Go to whatsapp > Linked Devices > Join `Multi Device Beta` > Click on `link device`)
 
 ###### Error Step (ignore if no error in termux)
 [ If device vibrate but not connected ]
 * Exit from termux. (necessary)
 * Open file manager, go to `downloads > valor > session.data.json` & delete session.data.json file.
-
-##### Step 7
 ```
 $ cd /storage/downloads/valor
 .../downloads/valor-x.x.x-md $ node .
 ```
-
-##### Step 8
-* Scan QR code, once connected, all bot plugins appear green in termux at first boot-up.
-
-Caution:- If failed to scan QR code, then repeat steps.
+Caution:- If failed to scan QR code, then repeat from steps 5.
 
 ================================
 

@@ -14,7 +14,7 @@ Note: add buildpack in above showed sequence only
 4. Enter `App name` and click on `Create app`.
 5. Go to `Settings`.
 6. Click on `Add buildpack`.
-7. Add [`ffmpeg`](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest), [`imagemagick`](https://github.com/DuckyTeam/heroku-buildpack-imagemagick), [`heroku/nodejs`] and click on `Save changes` respectively. (Copy and paste from `Required for heroku`)
+7. Add [`ffmpeg`](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest), [`imagemagick`](https://github.com/DuckyTeam/heroku-buildpack-imagemagick), `heroku/nodejs` and click on `Save changes` respectively. (Copy and paste from `Required buildpack`)
 8. Go to `Deploy` and click on `GitHub (connect to GitHub)`.
 9. Connect your `GitHub` account to `Heroku` account.
 10. After conncted with `GitHub`, scroll down search a repository `<your-username>/valor`.

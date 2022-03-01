@@ -1,6 +1,6 @@
 ## Installation For Heroku User
 
-#### Required Heroku Buildpack
+#### Required Buildpack
 * https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 * https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 * heroku/nodejs

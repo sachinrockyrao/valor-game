@@ -77,7 +77,6 @@ $ git clone https://github.com/DineshValor/valor
 ##### Step 3
 ```
 $ cd /storage/downloads/valor-x.x.x-md
-  (Here replace `x.x.x` with current version of a bot, For ex. `valor-4.1.0-md`)
 .../downloads/valor-x.x.x-md $ yarn
 ```
 

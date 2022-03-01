@@ -1,5 +1,17 @@
 # VALOR WhatsApp Bot
-based on Baileys Multi-Device library.
+
+<table>
+  <tr>
+    <td>Bot Menu</td>
+     <td>Bot Status</td>
+     <td>Download Video's & Audio's</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/98645523/156191052-0d0b3961-dcfb-4c1b-ae19-dac18541df92.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/98645523/156191168-9f70e706-2c31-4da4-bde7-400daefab335.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/98645523/156191231-0c4c3a02-dd74-403f-ac22-b803a719a89b.jpg" width=270 height=480></td>
+  </tr>
+ </table>
 
 ## Installation For Heroku User
 

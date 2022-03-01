@@ -26,7 +26,7 @@ Note: add buildpack in above showed sequence only
 16. Scan QR from `Whatsapp > Linked Devices > Join Multi Devices > Link Device`.
 17. Hooray, Successfully Bot Setup Completed.
 
-==================================
+=================================
 
 ## Installation For Termux User
 

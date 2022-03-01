@@ -153,8 +153,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     conn.sendButton(m.chat, '```🧑‍🏫 ɪ\'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴩ ʏᴏᴜ 🧑‍🏫```', text.trim(), 'https://telegra.ph/file/fe5883c8011fd033e395c.jpg', [
-['Delete', '/delete'],
-['Status','/ping']
+['Status', '/ping'],
+['Delete','/delete']
 ], m, { asLocation: true })
   } catch (e) {
     conn.reply(m.chat, 'Sorry, the menu is in error', m)

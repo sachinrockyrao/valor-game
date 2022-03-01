@@ -116,10 +116,10 @@ Note: Extract `node_modules.zip` properly. Make sure only single folder with nam
 * Check twice `node_modules.zip` file extracted properly at path `/downloads/valor-bot/node_modules/(400+ folder)`
 * Raise issue at 'https://github.com/DineshValor/valor/issues'
 
-##### Step 3
+##### Step 5
 * Wait for bot starting...
 
-##### Step 4
+##### Step 6
 * Scan QR code from 2nd device. (Go to whatsapp > Linked Devices > Join `Multi Device Beta` > Click on `link device`)
 
 ###### Error Step (ignore if no error in termux)
@@ -127,13 +127,13 @@ Note: Extract `node_modules.zip` properly. Make sure only single folder with nam
 * Exit from termux. (necessary)
 * Open file manager, go to `downloads > valor > session.data.json` & delete session.data.json file.
 
-##### Step 5
+##### Step 7
 ```
 $ cd /storage/downloads/valor
 .../downloads/valor-x.x.x-md $ node .
 ```
 
-##### Step 6
+##### Step 8
 * Scan QR code, once connected, all bot plugins appear green in termux at first boot-up.
 
 Caution:- If failed to scan QR code, then repeat steps.

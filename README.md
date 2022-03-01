@@ -1,3 +1,6 @@
+Valor Whatsapp Bot
+based on Baileys Multi-Device library.
+
 ## Installation For Heroku User
 
 #### Required Buildpack

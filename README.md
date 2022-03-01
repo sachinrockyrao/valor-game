@@ -5,7 +5,7 @@
 * https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 * heroku/nodejs
 
-Note: add buildpack in above showed sequence only
+Note: add above buildpack in sequence and click on save changes respectively.
 
 ### Steps To Setup Bot on Heroku
 1. Fork this github repository.

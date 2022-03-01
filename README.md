@@ -1,5 +1,4 @@
 # VALOR WhatsApp Bot
-Based on [`games-wabot`](https://github.com/BochilGaming/games-wabot) and [`Baileys_multi-device`](https://github.com/adiwajshing/Baileys)
 
 <table>
   <tr>
@@ -13,6 +12,8 @@ Based on [`games-wabot`](https://github.com/BochilGaming/games-wabot) and [`Bail
     <td><img src="https://user-images.githubusercontent.com/98645523/156191231-0c4c3a02-dd74-403f-ac22-b803a719a89b.jpg" width=270 height=480></td>
   </tr>
  </table>
+
+Based on [`games-wabot`](https://github.com/BochilGaming/games-wabot/tree/multi-device) and [`Baileys_multi-device`](https://github.com/adiwajshing/Baileys)
 
 ## Installation For Heroku User
 

@@ -1,4 +1,4 @@
-Valor Whatsapp Bot
+# VALOR WhatsApp Bot
 based on Baileys Multi-Device library.
 
 ## Installation For Heroku User

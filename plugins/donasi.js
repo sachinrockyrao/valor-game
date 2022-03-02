@@ -1,15 +1,11 @@
 let handler =  m => m.reply(`
-╭─「 Donasi • Pulsa 」
-│ • Indosat Ooredoo [085713964963]
-│ • Telkomsel [081319944687]
-╰────
+├────【 DONATE 】────┤
 
-╭─「 Donasi • Non Pulsa 」
-│ • https://saweria.co/BochilGaming
-│ • Gopay [085713964963]
-╰────
+₹ ᴜᴩɪ: 9107910799@paytm
+💱 ᴩᴀʏᴩᴀʟ: https://www.paypal.me/DineshValor
+₿ ʙɪᴛᴄᴏɪɴ: 3NHhMBDrkD2ymWnP7BGvSJuejvUGHr1kb8
 `.trim()) // Tambah sendiri kalo mau
-handler.help = ['donasi']
+handler.help = ['donate']
 handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
 

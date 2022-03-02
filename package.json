@@ -1,6 +1,6 @@
 {
     "name": "valor-bot",
-    "version": "4.1.6-beta",
+    "version": "2.22.4.74-beta",
     "description": "Customizable WhatsApp Bot",
     "main": "index.js",
     "type": "module",

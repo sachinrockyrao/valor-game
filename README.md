@@ -1,4 +1,4 @@
-# VALOR WhatsApp Bot (Multi Device)
+# VALOR WhatsApp Bot (Multi-device beta)
 
 <table>
   <tr>

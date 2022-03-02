@@ -52,14 +52,11 @@ Note: add above buildpack in sequence and click on save changes respectively.
 * 2 Device (one to run termux, second to scan qr code from termux)
 * Little bit IQ
 
-Note: You can run bot in single device after successful setup, just copy whole/full `(valor-x.x.x-md)` folder from another device into yours and run that folder in termux, but it's only works with Termux (Hard) Method.
+Note: You can run bot in single device after successful setup, just copy whole/full `(valor-md)` folder from another device into yours and run that folder in termux, but it's only works with Termux (Hard) Method.
 
-(Here `x.x.x` is current version of a bot)
 #### Additional Requirements:
 * Download [`Termux.apk`](https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_universal.apk)
-* Fork repo or download [`valor-x.x.x-md.zip`](https://github.com/DineshValor/valor/archive/refs/heads/v4.0.5-md.zip)
-
-  (Here `x.x.x` is current version of a bot)
+* Fork repo or download [`valor-md.zip`](https://github.com/DineshValor/valor/archive/refs/heads/v4.0.5-md.zip)
 * Download [`node_modules.zip`](https://drive.google.com/file/d/1Ydcjt3PnGiOr9vL66dFC11V0sEywJb32/view?usp=drivesdk)
 
 ### Steps To Setup Bot Into Termux (Easy)
@@ -99,18 +96,16 @@ $ git clone https://github.com/DineshValor/valor
 ╭─────────────────────────────
 │[ If Error in `git clone` command ]
 │ • Download `valor` from above section `Additional Requirements` 2nd point.
-| • Extract `valor-x.x.x-md.zip` using any file manager into `downloads` folder.
-│  (Here `x.x.x` is current version of a bot)
+| • Extract `valor-md.zip` using any file manager into `downloads` folder.
 ╰─────────────────────────────
 
-$ cd valor-x.x.x-md
+$ cd valor-md
 $ yarn
 
 ╭─────────────────────────────
 │ [ If Error in `yarn` command ]
 │ • Download `node_modules` from above section `Additional Requirements` 3rd point.
-│ • Extract `node_modules.zip` using any file manager into `valor-x.x.x-md` folder. For ex. (downloads/valor-x.x.x-md/node_modules)
-│  (Here `x.x.x` is current version of a bot)
+│ • Extract `node_modules.zip` using any file manager into `valor-md` folder. For ex. (downloads/valor-md/node_modules)
 ╰─────────────────────────────
 
 $ node .
@@ -127,15 +122,15 @@ $ node .
 ```
 ╭─────────────────────────────
 │ [ If device vibrate but not connected ]
-│ • Exit from termux. (necessary)
-│ • Open file manager, go to `downloads > valor > session.data.json` & delete session.data.json file.
+│ • Exit from termux. (Complete exit)
+│ • Open file manager, go to `downloads > valor-md > session.data.json` & delete session.data.json file.
 ╰─────────────────────────────
 
 $ cd /storage/downloads/valor
 $ node .
 ```
 6. Once connected, open `File Manager`.
-7. Go to /downloads/valor-x.x.x-md/session.data.json
+7. Go to /downloads/valor-md/session.data.json
 8. Take a backup of `session.data.json`. So in future you don't need to scan QR code again and again, just copy and paste in the bot folder path next time setup.
 9. Now your bot ready to rock n roll.
 

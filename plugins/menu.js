@@ -157,7 +157,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     conn.sendButton(m.chat, '├──────【 MENU 】──────┤', text.trim(), './media/naruto.jpg', [
 ['ᴅᴇʟᴇᴛᴇ', '/delete'],
 ['ʀᴜʟᴇs','/rules']
-], m, { asLocation: true })
+], m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, the menu is in error', m)
     throw e

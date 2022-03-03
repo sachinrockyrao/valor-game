@@ -6,6 +6,6 @@ let handler = async (m, { conn, text, command }) => {
 }
 handler.help = ['rules']
 handler.tags = ['info']
-handler.command = /^(rules|\?)$/i
+handler.command = /^(rules)$/i
 
 export default handler

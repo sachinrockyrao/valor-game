@@ -33,16 +33,6 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-https://github.com/DineshValor/valor
-
-╭─〔 *%npmname* 〕
-├ *ᴠᴇʀsɪᴏɴ:* %version
-├ *ᴄᴏᴍᴍᴀɴᴅ ᴩʀᴇғɪx:* *%p*
-│
-├ *ᴜᴩᴛɪᴍᴇ:* %muptime
-├ *Dᴀᴛᴀʙᴀsᴇ:* %totalreg
-╰────˧
-
 ╭─〔 *%name* 〕
 ├ *ʟɪᴍɪᴛ:* %limit Limit
 ├ *ʀᴏʟᴇ:* %role
@@ -154,7 +144,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
-    conn.sendButton(m.chat, '├──────【 MENU 】──────┤', text.trim(), './media/naruto.jpg', [
+    conn.sendButton(m.chat, '```🧑‍🏫ɪ\'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴩ ʏᴏᴜ🧑‍🏫```', text.trim(), './media/naruto.jpg', [
 ['ᴅᴇʟᴇᴛᴇ', '/delete'],
 ['ʀᴜʟᴇs','/rules']
 ], m)
@@ -163,9 +153,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     throw e
   }
 }
-handler.help = ['menu', 'help', '?']
+handler.help = ['menu', 'help']
 handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(menu|help)$/i
 
 handler.exp = 3
 

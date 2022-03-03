@@ -1,0 +1,8 @@
+[[build.buildpacks]]
+uri = "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+
+[[build.buildpacks]]
+uri = "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+
+[[build.buildpacks]]
+uri = "heroku/nodejs"

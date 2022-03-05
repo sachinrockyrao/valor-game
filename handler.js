@@ -184,7 +184,7 @@ export async function handler(chatUpdate) {
 
                     money: 0,
                     health: 100,
-                    limit: 100,
+                    limit: 10,
                     potion: 10,
                     trash: 0,
                     wood: 0,
@@ -275,7 +275,7 @@ export async function handler(chatUpdate) {
                     delete: true,
                     antiLink: false,
                     viewonce: false,
-                    antiToxic: true,
+                    antiToxic: false,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
@@ -292,7 +292,7 @@ export async function handler(chatUpdate) {
         } catch (e) {
             console.error(e)
         }
-        if (opts['nyimak'])
+        if (opts['listen'])
             return
         if (!m.fromMe && opts['self'])
             return
@@ -470,11 +470,11 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
+                    this.reply(m.chat, `Your limit is up, please buy via *${usedPrefix}buy*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}`, m)
+                    this.reply(m.chat, `required level ${plugin.level} to use this command.  Your level ${_user.level}`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -530,7 +530,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' Limit terpakai')
+                        m.reply(+m.limit + ' Limit used')
                 }
                 break
             }
@@ -640,8 +640,8 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return
         await this.reply(msg.chat, `
-Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
-Untuk mematikan fitur ini, ketik
+Detected @${participant.split`@`[0]} deleted message
+To turn off this feature, type
 *.enable delete*
 `.trim(), msg, {
             mentions: [participant]
@@ -654,16 +654,16 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-        owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-        mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-        premium: 'Perintah ini hanya untuk member _*Premium*_ !',
-        group: 'Perintah ini hanya dapat digunakan di grup!',
-        private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-        admin: 'Perintah ini hanya untuk *Admin* grup!',
-        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
-        restrict: 'Fitur ini di *disable*!'
+        rowner: 'This command can only be used by _*OWNER*_ !',
+        owner: 'This command can only be used by _*Bot Owner*_!',
+        mods: 'This command can only be used by _*Moderator*_ !',
+        premium: 'This command is only for _*Premium*_ members !',
+        group: 'This command can only be used in _Groups_ !',
+        private: 'This command can only be used in _Private Chat_ !',
+        admin: 'This command is only for *Group Admin* !',
+        botAdmin: 'Make bot as *Admin* to use this command !',
+        unreg: 'Please register to use this feature by typing:\n\n*#list name.age*\n\nContoh: *#list Valor.21*',
+        restrict: 'This feature is *disabled*!'
     }[type]
     if (msg) return m.reply(msg)
 }
